@@ -23,5 +23,3 @@ http://www.metamorphozis.com/website_hosting/index.php
 NOTE: your server needs to support php to send mail forms.
 
 Credits: Icons by http://dryicons.com
-
-
