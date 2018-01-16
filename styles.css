@@ -1,0 +1,563 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    padding: 0px;
+    border: none;
+}
+.header > a {
+  color: inherit;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #515151;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    background: #222222;
+}
+.clear{
+	clear: both;
+}
+
+#wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.wid_center{
+	width: 1000px;
+	margin: 0 auto;
+}
+@keyframes menuLoadText {
+    10% {
+      opacity: 0;
+    }
+    55% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 0;
+    }
+}
+@keyframes menuLoadHeader {
+    0% {
+      margin-top: -55px;
+    }
+    50% {
+      margin-top: 0px;
+    }
+    65% {
+      margin-top: 0px;
+    }
+    85% {
+      margin-top: -55px;
+    }
+}
+#header{
+  overflow: hidden;
+  background-color: #191919;
+	position: fixed;
+  z-index: 51;
+	left: 0;
+  opacity: 0.9;
+	width: 100%;
+  padding: 5px;
+	height: 65px;
+	border-bottom: 1px solid #ffffff;
+  animation: 5s menuLoadHeader;
+  transition: margin-top 0.875s;
+  margin-top: -55px;
+}
+#header li > a{
+  animation: 5s menuLoadText;
+  transition: opacity 1s;
+  opacity: 0;
+}
+#header:hover li > a{
+  transition: opacity 3s;
+  opacity: 1;
+}
+#header:hover {
+  transition: margin-top 0.4s;
+  margin-top: 0px;
+}
+.blerb {
+  color: #d9d9d9;
+  text-align:center;
+}
+#logo_hover {
+  margin-top: 25px ;
+  height: 280px;
+  margin-left: 300px;
+  width: auto;
+  position: absolute;
+  transition: opacity 2s;
+  opacity: 0;
+}
+.banner-wrapper:hover > #logo_hover {
+  transition: opacity 2s;
+  opacity: 1;
+}
+/*logo*/
+#logo{
+	border-bottom: 1px solid #515151;
+	width: 100%;
+	height: 46px;
+}
+
+#logo .wid_center a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #888888;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#logo .wid_center h1 a{
+	font-size: 14px;
+}
+
+/*
+ navigation
+*/
+
+
+#menu{
+	width: 700px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#menu ul{
+  list-style: none;
+  height: 100%;
+	padding: 0px;
+}
+
+#menu ul li{
+  vertical-align: top;
+  height: auto;
+	display: inline;
+}
+
+#menu ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    float: left;
+	width: 120px;
+    height: 45px;
+	text-align: center;
+}
+arrow {
+  transition: 1s opacity;
+  opacity: 0;
+  border: solid white;
+  display: inline-block !important;
+  margin: auto;
+  border-width: 3px;
+  border-color: #222222;
+  background-color: white;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  display: inline-block;
+  padding: 3px;
+}
+arrow.down {
+  border: solid white;
+  display: inline-block !important;
+  margin: auto;
+  border-width: 3px;
+  border-color: #222222;
+  background-color: white;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  display: inline-block;
+  padding: 3px;
+}
+#menu ul li a:hover > arrow{
+  transition: 1s opacity;
+	opacity: 0.7;
+}
+.header {
+  color: #e9e9e9 !important;
+  position: relative;
+  text-shadow: 5px #000000;
+  text-align: center;
+  padding-bottom: 5px;
+}
+h2.header {
+  padding: 5px;
+}
+.subheader {
+
+}
+.filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#menu ul li .select > arrow{
+	opacity: 1;
+}
+
+/*
+	introduce
+*/
+
+#intro{
+	clear: both;
+	padding-top: 115px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#intro h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	color: #000000;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.razd_bor{
+	border-top: 1px solid #515151;
+	padding-bottom: 20px;
+}
+
+/*
+	prewiev
+*/
+
+.prew_box{
+	height: 330px;
+}
+
+.prew_bg1{
+	background: url(images/prev_bg_1.jpg) no-repeat top left;
+}
+
+.prew_bg2{
+	background: url(images/prev_bg_2.jpg) no-repeat top left;
+}
+
+.prew_bg3{
+	background: url(images/prev_bg_3.jpg) no-repeat top left;
+}
+
+.prew_bg4{
+	background: url(images/prev_bg_4.jpg) no-repeat top left;
+}
+
+.prew_bg5{
+	background: url(images/prev_bg_5.jpg) no-repeat top left;
+}
+
+.prew_but_left{
+	float: left;
+	width: 15px;
+	padding-left: 30px;
+	padding-top: 152px;
+}
+
+.prew_but_middle{
+	float: left;
+	width: 910px;
+	text-align: center;
+}
+
+.prew_but_middle ul{
+	list-style: none;
+	width: 110px;
+	margin: 0 auto;
+	padding-top: 300px;
+}
+
+.prew_but_middle ul li{
+	float: left;
+	padding-left: 5px;
+}
+
+.prew_but_middle ul li a{
+	display: block;
+	background: url(images/prev_but_bg.png) no-repeat top right;
+	width: 16px;
+	height: 15px;
+}
+
+.prew_but_middle ul li a:hover{
+	background: url(images/prev_but_select.png) no-repeat;
+}
+
+.prew_but_middle ul li .select{
+	background: url(images/prev_but_select.png) no-repeat;
+}
+
+.prew_but_right{
+	float: left;
+	width: 45px;
+	padding-top: 152px;
+}
+
+.prew_bot
+{
+margin-top: 30px;
+}
+
+.prew_bot p{
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	padding: 5px;
+}
+
+/*
+	content
+*/
+
+#content{
+	padding-bottom: 20px;
+}
+
+/*
+	3 column box
+*/
+
+.col1, .col2, .col3{
+	float: left;
+	width: 300px;
+	padding: 0px 15px 0px 15px;
+}
+
+.col2, .col3{
+	background: url(images/bor_3col.gif) repeat-y left;
+}
+
+/*
+	white last box
+*/
+
+.white_box{
+	padding: 15px;
+}
+
+/*
+	footer
+*/
+
+#footer{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	color: #ffffff;
+  background-color: #111111;
+  border: inset 2px #000000;
+	font-size: 11px;
+}
+
+#footer a{
+	color: #ffffff;
+}
+
+.foot_column4{
+	padding: 0px 20px 0px 20px;
+}
+
+.foot_col1, .foot_col2, .foot_col3, .foot_col4{
+    float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.foot_col1, .foot_col2, .foot_col3{
+
+}
+
+.foot_col1{
+    width: 115px;
+}
+
+.foot_col2{
+    width: 201px;
+}
+
+.foot_col2 p{
+	padding-bottom: 4px;
+}
+
+.foot_col3{
+    width: 238px;
+}
+
+.foot_col4{
+    width: 161px;
+}
+
+.foot_col4 a{
+	font-weight: normal;
+}
+
+.ls{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.ls li{
+    margin-bottom: 4px;
+}
+
+.ls li a{
+    background: url(images/ls.gif) no-repeat 0px 6px;
+    display: block;
+    padding-left: 15px;
+    padding-bottom: 4px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.link1{
+    background: url(images/link1.png) no-repeat 0px 2px;
+    padding-left: 30px;
+    min-height: 18px;
+    padding-bottom: 10px;
+}
+
+.link2{
+    background: url(images/link2.png) no-repeat 0px 2px;
+    padding-left: 30px;
+    min-height: 18px;
+    padding-bottom: 10px;
+}
+
+.link3{
+    background: url(images/link3.png) no-repeat 0px 2px;
+    padding-left: 30px;
+    min-height: 18px;
+    padding-bottom: 10px;
+}
+
+.link4{
+    background: url(images/link4.png) no-repeat 0px 2px;
+    padding-left: 30px;
+    min-height: 18px;
+    padding-bottom: 10px;
+}
+
+/*
+	footer bottom
+*/
+
+#footer_bot{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #e6e6e6;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+#footer_bot a, #footer_bot p{
+	color: #000000;
+	font-weight: normal;
+}
+
+
+
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+
+#slider-wrapper {
+    width: 1000px;
+    height: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#slider {
+	position:absolute;
+    width: 1000px;
+    height: 330px;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left: 430px;
+	bottom: 12px;
+
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+    color:#efe9d1;
+    text-decoration:underline;
+}
